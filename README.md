@@ -1,19 +1,19 @@
 # libWNXML
 
-C++ API and command-line executable for querying Hungarian WordNet (HuWN) XML files.
+C++ API and console application for querying Hungarian WordNet (HuWN) XML files.
 
 Author: Márton Miháltz <mmihaltz@gmail.com>
 
 **Contents:**
 
-- `WNXMLConsole.exe`: standalone command-line Windows application binary for querying HuWN
+- `WNXMLConsole.exe`: standalone Windows console application binary for querying HuWN (sources included)
 - `LibWNXML`: C++ API for querying HuWN XML files, used by WNXMLConsole.
 
 ## Using WNXMLConsole
 
 *Requirements*: you will need the latest HuWN XML files (download from https://github.com/dlt-rilmta/huwn).
 
-Open a command-line prompt in Windows, change to the directory containing WNXMLConsole.exe and type:
+Open a command-line prompt (console window) in Windows, change to the directory containing `WNXMLConsole.exe` and type:
 
 `wnxmlconsole.exe <huwn_xml_file>`
 
@@ -42,3 +42,6 @@ Source code and .vcproj project files for MS Visual Studio are included.
 still depend on proprietary 3rd party libraries ((C) MorphoLogic). Contact 
 me if you need the code to be upgraded to be buildable, or feel free to do it 
 yourself, pull requests are welcome. Until then this library is condidered abandonware, I guess.
+
+There is an operational and up-to-date `pyhon3` port of the API (and the console application as well) if you're interested, available here: 
+https://github.com/ppke-nlpg/pywnxml
